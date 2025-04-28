@@ -1,0 +1,24 @@
+{
+  "image": "mcr.micros? 
+  0oft.com/devcontainers/universal:2",
+  "features": {}
+}{
+  "name": "Ethereum Lists Chains Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "remoteUser": "vscode"
+}
